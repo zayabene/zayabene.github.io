@@ -27,7 +27,8 @@
     background: rgba(253,250,246,0.92); backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(107,31,42,0.1);
   }
-  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--burgundy); letter-spacing: 0.02em; }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--burgundy); letter-spacing: 0.02em; text-decoration: none; }
+  .nav-logo:hover { color: var(--burgundy-light); }
   .nav-links { display: flex; gap: 2.5rem; list-style: none; }
   .nav-links a { text-decoration: none; color: var(--charcoal); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
   .nav-links a:hover { color: var(--burgundy); }
@@ -49,13 +50,13 @@
   .btn-secondary:hover { background: var(--burgundy); color: white; transform: translateY(-2px); }
 
   .hero-photo-wrap { display: flex; justify-content: center; align-items: center; position: relative; }
-  .hero-photo-frame { position: relative; width: 340px; height: 400px; }
+  .hero-photo-frame { position: relative; width: 300px; height: 420px; }
   .hero-photo-frame::before { content: ''; position: absolute; top: 18px; left: 18px; right: -18px; bottom: -18px; border: 2px solid var(--gold); border-radius: 12px; z-index: 0; }
-  .hero-photo-frame img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 12px; display: block; }
+  .hero-photo-frame img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: cover; object-position: center 65%; border-radius: 12px; display: block; }
   .hero-badge { position: absolute; bottom: -16px; right: -24px; z-index: 2; background: var(--burgundy); color: white; padding: 0.7rem 1.2rem; border-radius: 8px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; line-height: 1.4; text-align: center; box-shadow: 0 4px 16px rgba(107,31,42,0.3); }
 
   section { padding: 5rem 3rem; }
-  .section-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem; }
+  .section-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem; display: block; }
   .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 700; color: var(--charcoal); margin-bottom: 1.5rem; line-height: 1.15; }
 
   #about { background: var(--warm-white); display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; align-items: center; }
@@ -127,7 +128,7 @@
     .nav-links { gap: 1.2rem; }
     .hero { grid-template-columns: 1fr; padding: 5rem 1.5rem 3rem; text-align: center; }
     .hero-photo-wrap { order: -1; }
-    .hero-photo-frame { width: 260px; height: 300px; }
+    .hero-photo-frame { width: 260px; height: 340px; }
     #about { grid-template-columns: 1fr; gap: 3rem; }
     .projects-grid { grid-template-columns: 1fr; }
     .project-card.featured { grid-template-columns: 1fr; }
@@ -139,7 +140,7 @@
 <body>
 
 <nav>
-  <div class="nav-logo">Zaya Dixon</div>
+  <a href="#home" class="nav-logo">Zaya Dixon</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -150,9 +151,9 @@
 
 <section class="hero" id="home">
   <div class="hero-text fade-in">
-    <span class="hero-eyebrow">CS Graduate · Builder · Community-Driven</span>
+    <span class="hero-eyebrow">Creative &middot; Builder &middot; Community-Driven</span>
     <h1 class="hero-name">Zaya<br><span>Dixon.</span></h1>
-    <p class="hero-tagline">I build tools that matter — from AR experiences raising awareness for foster youth to AI-powered apps that make learning feel human. Currently seeking a Data Analyst role where technology meets mission.</p>
+    <p class="hero-tagline">Somewhere between the code and the community is where I do my best work &mdash; and I care deeply about what gets built, who it serves, and whether it lasts. When I show up, I show up with intention: thoughtful, precise, and genuinely invested in the outcome.</p>
     <div class="hero-cta-group">
       <a href="#projects" class="btn-primary">See My Work</a>
       <a href="#contact" class="btn-secondary">Let's Connect</a>
@@ -170,18 +171,18 @@
   <div>
     <span class="section-label">About Me</span>
     <h2 class="section-title">Builder. Teacher.<br>Mission-Driven.</h2>
-    <p class="about-intro">I'm a CS graduate from FIU with a <strong>3.69 GPA</strong> who builds things that matter. From publishing AR experiences for foster youth advocacy to shipping an interactive annotation app in a week-long makeathon, I thrive at the intersection of technology and community impact.</p>
-    <p class="about-intro">I'm equally comfortable writing Python scripts, running workshops for 500+ attendees, and sitting with a stakeholder to understand what they actually need — not just what they asked for.</p>
+    <p class="about-intro">I'm a CS graduate from FIU with a <strong>3.69 GPA</strong> who builds things that matter. I use curiosity to see how far technology can go in my creative endeavors &mdash; from publishing AR experiences for foster youth advocacy to shipping an interactive annotation app in a week-long makeathon.</p>
+    <p class="about-intro">I'm equally comfortable writing Python scripts, running workshops for 500+ attendees, and sitting with a stakeholder to understand what they actually need &mdash; not just what they asked for.</p>
     <div class="skills-grid">
       <span class="skill-chip">Python</span>
       <span class="skill-chip">SQL</span>
       <span class="skill-chip">JavaScript</span>
-      <span class="skill-chip">Excel & Tableau</span>
+      <span class="skill-chip">Excel &amp; Tableau</span>
       <span class="skill-chip">Generative AI Tools</span>
       <span class="skill-chip">Lens Studio</span>
-      <span class="skill-chip">Figma & Figma Make</span>
+      <span class="skill-chip">Figma &amp; Figma Make</span>
       <span class="skill-chip">Infor WMS</span>
-      <span class="skill-chip">KPI & SLA Tracking</span>
+      <span class="skill-chip">KPI &amp; SLA Tracking</span>
       <span class="skill-chip">Cross-Functional Collaboration</span>
     </div>
   </div>
@@ -200,25 +201,25 @@
   </div>
   <div class="projects-grid">
     <div class="project-card featured fade-in">
-      <div class="project-img rose"><div class="project-img-inner"><span class="project-icon">🦋</span></div></div>
+      <div class="project-img rose"><div class="project-img-inner"><span class="project-icon">&#x1F98B;</span></div></div>
       <div class="project-body">
         <div class="project-tags"><span class="tag tag-nonprofit">Nonprofit</span><span class="tag tag-ai">AI / AR</span></div>
         <h3 class="project-name">Foster the Future Lens</h3>
-        <p class="project-desc">Built an augmented reality experience in Lens Studio to raise awareness of transitional-age foster youth — a population often overlooked in public discourse — in collaboration with the Art + Practice Foundation. Combined interactive animations and motion tracking to create an emotionally resonant, shareable experience. Showcased to 200+ attendees including Snapchat staff and industry professionals.</p>
-        <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=9d01b2f6195f42d2aff701aa606d9697&metadata=01" target="_blank" class="project-link">Try the Lens →</a>
+        <p class="project-desc">Built an augmented reality experience in Lens Studio to raise awareness of transitional-age foster youth &mdash; a population often overlooked in public discourse &mdash; in collaboration with the Art + Practice Foundation. Combined interactive animations and motion tracking to create an emotionally resonant, shareable experience. Showcased to 200+ attendees including Snapchat staff and industry professionals.</p>
+        <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=9d01b2f6195f42d2aff701aa606d9697&metadata=01" target="_blank" class="project-link">Try the Lens &#x2192;</a>
       </div>
     </div>
     <div class="project-card fade-in">
-      <div class="project-img slate"><div class="project-img-inner"><span class="project-icon">📝</span></div></div>
+      <div class="project-img slate"><div class="project-img-inner"><span class="project-icon">&#x1F4DD;</span></div></div>
       <div class="project-body">
         <div class="project-tags"><span class="tag tag-ux">UX / Product</span></div>
         <h3 class="project-name">EncycloTalk</h3>
-        <p class="project-desc">Built solo in one week for the Contra x Figma Makeathon. A collaborative annotation app that turns static research into living conversation — featuring highlight + annotate, emoji reactions, public/private modes, AnnoPoints rewards, and custom highlight colors. Scoped, designed, and shipped from scratch using Figma Design and Figma Make.</p>
-        <a href="https://width-claw-11520069.figma.site" target="_blank" class="project-link">View Live Demo →</a>
+        <p class="project-desc">Built solo in one week for the Contra x Figma Makeathon. A collaborative annotation app that turns static research into living conversation &mdash; featuring highlight + annotate, emoji reactions, public/private modes, AnnoPoints rewards, and custom highlight colors. Scoped, designed, and shipped from scratch using Figma Design and Figma Make.</p>
+        <a href="https://width-claw-11520069.figma.site" target="_blank" class="project-link">View Live Demo &#x2192;</a>
       </div>
     </div>
     <div class="project-card fade-in">
-      <div class="project-img green"><div class="project-img-inner"><span class="project-icon">🌐</span></div></div>
+      <div class="project-img green"><div class="project-img-inner"><span class="project-icon">&#x1F310;</span></div></div>
       <div class="project-body">
         <div class="project-tags"><span class="tag tag-ai">AI</span><span class="tag tag-education">Education</span></div>
         <h3 class="project-name">AI Language Learning App</h3>
@@ -226,11 +227,11 @@
       </div>
     </div>
     <div class="project-card fade-in">
-      <div class="project-img purple"><div class="project-img-inner"><span class="project-icon">🌿</span></div></div>
+      <div class="project-img purple"><div class="project-img-inner"><span class="project-icon">&#x1F33F;</span></div></div>
       <div class="project-body">
         <div class="project-tags"><span class="tag tag-wellness">Wellness</span><span class="tag tag-ux">Web</span></div>
         <h3 class="project-name">Stress &amp; Anxiety Management App</h3>
-        <p class="project-desc">Collaborated with a team to build a responsive, user-friendly stress management website using JavaScript, HTML, and CSS. Focused on accessibility and intuitive navigation across all age groups — a clean layout designed for anyone who needs it, not just tech-savvy users.</p>
+        <p class="project-desc">Collaborated with a team to build a responsive, user-friendly stress management website using JavaScript, HTML, and CSS. Focused on accessibility and intuitive navigation across all age groups &mdash; a clean layout designed for anyone who needs it, not just tech-savvy users.</p>
       </div>
     </div>
   </div>
@@ -241,7 +242,7 @@
   <h2 class="section-title">Where I've been.</h2>
   <div class="experience-list">
     <div class="exp-item">
-      <div class="exp-date">Oct 2025 — Present</div>
+      <div class="exp-date">Oct 2025 &mdash; Present</div>
       <div>
         <div class="exp-role">Client Logistics Coordinator</div>
         <div class="exp-org">Saddle Creek Logistics</div>
@@ -253,7 +254,7 @@
       </div>
     </div>
     <div class="exp-item">
-      <div class="exp-date">Jun — Aug 2025</div>
+      <div class="exp-date">Jun &mdash; Aug 2025</div>
       <div>
         <div class="exp-role">Snap Lens Scholar</div>
         <div class="exp-org">Snap Lens Academy</div>
@@ -279,14 +280,14 @@
       <div class="exp-date">Fall 2024</div>
       <div>
         <div class="exp-role">Elder (Mentor)</div>
-        <div class="exp-org">SISTUHS, Inc. — FIU Chapter</div>
+        <div class="exp-org">SISTUHS, Inc. &mdash; FIU Chapter</div>
         <ul class="exp-bullets">
-          <li>Mentored prospective members through their initiation process by organizing structured support sessions, creating study guides, and holding regular 1-on-1 check-ins — guiding them from uncertainty to confidence in their interviews and exams.</li>
+          <li>Mentored prospective members through their initiation process by organizing structured support sessions, creating study guides, and holding regular 1-on-1 check-ins &mdash; guiding them from uncertainty to confidence in their interviews and exams.</li>
         </ul>
       </div>
     </div>
     <div class="exp-item">
-      <div class="exp-date">May 2023 — Apr 2025</div>
+      <div class="exp-date">May 2023 &mdash; Apr 2025</div>
       <div>
         <div class="exp-role">Desk Assistant</div>
         <div class="exp-org">Housing &amp; Residential Life, FIU</div>
@@ -304,12 +305,12 @@
   <h2 class="section-title">Let's build<br>something that matters.</h2>
   <p class="contact-sub">Open to opportunities in data analytics, AI implementation, and mission-driven tech work.</p>
   <div class="contact-links">
-    <a href="mailto:zayadixon@gmail.com" class="contact-btn light">✉ zayadixon@gmail.com</a>
-    <a href="https://www.linkedin.com/in/zayadixon/" target="_blank" class="contact-btn outline">LinkedIn →</a>
+    <a href="mailto:zayadixon@gmail.com" class="contact-btn light">&#x2709; zayadixon@gmail.com</a>
+    <a href="https://www.linkedin.com/in/zayadixon/" target="_blank" class="contact-btn outline">LinkedIn &#x2192;</a>
   </div>
 </section>
 
-<footer>© 2025 Zaya Dixon · Built with intention.</footer>
+<footer>&copy; 2025 Zaya Dixon &middot; Built with intention.</footer>
 
 <script>
   const observer = new IntersectionObserver((entries) => {
